@@ -2,6 +2,8 @@
 
 A console app that lets you set new passwords for TightVNC in a non-interactive environment.  The password is encrypted using the same C++ code from the TightVNC repository.
 
+Note: This repo uses some of the original source code from the TightVNC project. License information (also GPL-licensed) and full source code can be found [here](https://www.tightvnc.com/licensing.php).
+
 ```
 TightVncPassword
 
