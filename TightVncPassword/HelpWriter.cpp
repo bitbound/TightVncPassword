@@ -6,8 +6,8 @@ using namespace std;
 void WriteHelp()
 {
 	cout << "TightVncPassword" << endl << endl;
-	cout << "Encrypts a new password for TightVNC and sets it in the registry." << endl << endl;
-	cout << "Syntax: TightVncPassword.exe {password} {machine/user}" << endl << endl;
+	cout << "Encrypts a new password for TightVNC and optionally sets it in the registry." << endl << endl;
+	cout << "Syntax: TightVncPassword.exe {password} [{machine/user}]" << endl << endl;
 
 	cout
 		<< "Password:" << endl
@@ -16,8 +16,8 @@ void WriteHelp()
 		<< "will get saved to the registry." << endl << endl;
 
 	cout
-		<< "Machine/User:" << endl
-		<< "  The second argument should be literally \"machine\" or \"user\". "
+		<< "Machine/User (optional):" << endl
+		<< "  If specified, the encrypted password will be written to the registry. "
 		<< "If \"machine\", the password will be saved to HKLM and apply to the "
 		<< "service.  If \"user\", it will be saved to HKCU and only apply when "
 		<< "tvnserver.exe is run in \"app\" mode." << endl;
