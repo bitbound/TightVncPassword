@@ -35,7 +35,7 @@ int WriteEncryptedPassword(std::string regTarget, UINT8* encryptedPassword, int 
 	LPCWSTR subkeyPath = L"Software\\TightVNC\\Server";
 	HKEY serverKey = nullptr;
 
-	LSTATUS result = RegCreateKeyW(HKEY_CURRENT_USER, subkeyPath, &serverKey);
+	LSTATUS result = RegCreateKeyW(baseKey, subkeyPath, &serverKey);
 
 	if (result != ERROR_SUCCESS)
 	{
